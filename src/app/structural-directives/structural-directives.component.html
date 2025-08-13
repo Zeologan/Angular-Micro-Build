@@ -1,0 +1,7 @@
+<p>structural-directives works!</p>
+<button (click)="isAuth()">{{loginBtn}}</button>
+<div *ngIf="islogin">
+    <ul>
+        <li *ngFor="let i of list">{{i}}</li>
+    </ul>
+</div>

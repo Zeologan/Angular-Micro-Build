@@ -7,13 +7,15 @@ import { InterpolationComponent } from './interpolation/interpolation.component'
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-binding.component';
 import { FormsModule } from '@angular/forms';
+import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InterpolationComponent,
     EventBindingComponent,
-    TwoWayDataBindingComponent
+    TwoWayDataBindingComponent,
+    StructuralDirectivesComponent
   ],
   imports: [
     BrowserModule,
