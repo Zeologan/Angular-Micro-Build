@@ -8,6 +8,8 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-binding.component';
 import { FormsModule } from '@angular/forms';
 import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
+import { ParentToChildComponent } from './parent-to-child/parent-to-child.component';
+import { ChildComponent } from './parent-to-child/child/child.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { StructuralDirectivesComponent } from './structural-directives/structura
     InterpolationComponent,
     EventBindingComponent,
     TwoWayDataBindingComponent,
-    StructuralDirectivesComponent
+    StructuralDirectivesComponent,
+    ParentToChildComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
