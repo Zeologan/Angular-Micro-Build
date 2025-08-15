@@ -10,6 +10,8 @@ import { FormsModule } from '@angular/forms';
 import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
 import { ParentToChildComponent } from './parent-to-child/parent-to-child.component';
 import { ChildComponent } from './parent-to-child/child/child.component';
+import { ChildToParentComponent } from './child-to-parent/child-to-parent.component';
+import { OutputComponent } from './child-to-parent/output/output.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { ChildComponent } from './parent-to-child/child/child.component';
     TwoWayDataBindingComponent,
     StructuralDirectivesComponent,
     ParentToChildComponent,
-    ChildComponent
+    ChildComponent,
+    ChildToParentComponent,
+    OutputComponent
   ],
   imports: [
     BrowserModule,
