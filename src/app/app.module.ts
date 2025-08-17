@@ -12,6 +12,7 @@ import { ParentToChildComponent } from './parent-to-child/parent-to-child.compon
 import { ChildComponent } from './parent-to-child/child/child.component';
 import { ChildToParentComponent } from './child-to-parent/child-to-parent.component';
 import { OutputComponent } from './child-to-parent/output/output.component';
+import { StudentCardComponent } from './student-card/student-card.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { OutputComponent } from './child-to-parent/output/output.component';
     ParentToChildComponent,
     ChildComponent,
     ChildToParentComponent,
-    OutputComponent
+    OutputComponent,
+    StudentCardComponent
   ],
   imports: [
     BrowserModule,

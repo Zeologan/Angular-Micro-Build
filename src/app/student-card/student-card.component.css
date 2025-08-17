@@ -1,0 +1,14 @@
+.header{
+    text-align: center;
+    margin: 1rem;
+}
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 20px;
+}
+.contianer{
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #999;
+}

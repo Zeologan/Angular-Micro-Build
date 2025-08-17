@@ -1,0 +1,13 @@
+<div class="header">
+    <h1>Student Cards</h1>
+    <button (click)="hideSHowEffect()">{{btn}}</button>
+</div>
+<div class="card-grid">
+    <ng-container *ngIf="isVisible">
+        <div class="contianer" *ngFor="let s of student">
+            <p>{{s.name}}</p>
+            <p>{{s.age}}</p>
+            <p>{{s.city}}</p>
+        </div>
+    </ng-container>
+</div>
