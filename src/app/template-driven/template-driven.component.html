@@ -1,0 +1,10 @@
+<!-- form Container  -->
+<div class="w-[320px] border border-gray-500 p-4 rounded-2xl">
+    <h2 class="text-center pb-4">Contact Us</h2>
+    <form class="flex flex-col gap-4" #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+        <input type="text" name="fullname" placeholder="Full Name" class="py-2 px-4 outline outline-gray-300 rounded-2xl" ngModel required>
+        <input type="text" name="email" placeholder="Email" class="py-2 px-4 outline outline-gray-300 rounded-2xl" ngModel required>
+        <textarea name="connect" id="" placeholder="Connect Us" class="py-2 px-4 outline outline-gray-300 rounded-2xl" ngModel ></textarea>
+        <button class="bg-gray-300 py-2 px-4 rounded-2xl hover:bg-gray-400 hover:text-white all duration-300 cursor-pointer" type="submit" [disabled]="contactForm.invalid">Submit</button>
+    </form>
+</div>  

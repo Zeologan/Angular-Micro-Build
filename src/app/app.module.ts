@@ -13,6 +13,7 @@ import { ChildComponent } from './parent-to-child/child/child.component';
 import { ChildToParentComponent } from './child-to-parent/child-to-parent.component';
 import { OutputComponent } from './child-to-parent/output/output.component';
 import { StudentCardComponent } from './student-card/student-card.component';
+import { TemplateDrivenComponent } from './template-driven/template-driven.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { StudentCardComponent } from './student-card/student-card.component';
     ChildComponent,
     ChildToParentComponent,
     OutputComponent,
-    StudentCardComponent
+    StudentCardComponent,
+    TemplateDrivenComponent
   ],
   imports: [
     BrowserModule,
