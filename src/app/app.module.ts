@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-binding.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
 import { ParentToChildComponent } from './parent-to-child/parent-to-child.component';
 import { ChildComponent } from './parent-to-child/child/child.component';
@@ -14,6 +14,7 @@ import { ChildToParentComponent } from './child-to-parent/child-to-parent.compon
 import { OutputComponent } from './child-to-parent/output/output.component';
 import { StudentCardComponent } from './student-card/student-card.component';
 import { TemplateDrivenComponent } from './template-driven/template-driven.component';
+import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
 
 @NgModule({
   declarations: [
@@ -27,12 +28,14 @@ import { TemplateDrivenComponent } from './template-driven/template-driven.compo
     ChildToParentComponent,
     OutputComponent,
     StudentCardComponent,
-    TemplateDrivenComponent
+    TemplateDrivenComponent,
+    ReactiveFormsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

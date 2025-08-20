@@ -1,0 +1,18 @@
+<!-- form Container  -->
+<div class="w-[320px] border border-gray-500 p-4 rounded-2xl">
+    <h2 class="text-center pb-4">Reactive Form</h2>
+    <form class="flex flex-col gap-4" [formGroup]="contactForm" (ngSubmit)="onSumbit()">
+        <input type="text" formControlName="fullname" placeholder="Full Name" class="py-2 px-4 outline outline-gray-300 rounded-2xl">
+        <small *ngIf="contactForm.get('fullname')?.invalid && contactForm.get('fullname')?.touched">
+            Full Name is required(min 3 characters)
+        </small>
+
+        <input type="text" formControlName="email" placeholder="Email" class="py-2 px-4 outline outline-gray-300 rounded-2xl">
+        <small *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched">
+            Please Enter Valid email
+        </small>
+
+        <textarea formControlName="connect" id="" placeholder="Connect Us" class="py-2 px-4 outline outline-gray-300 rounded-2xl" ></textarea>
+        <button class="bg-gray-300 py-2 px-4 rounded-2xl hover:bg-gray-400 hover:text-white all duration-300 cursor-pointer" type="submit" [disabled]="contactForm.invalid">Submit</button>
+    </form>
+</div>  
