@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-template-driven',
@@ -6,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./template-driven.component.css']
 })
 export class TemplateDrivenComponent {
-  onSubmit(form:any){
-    console.log(`Form Value : ${JSON.stringify(form.value)}`)
+  onFormSubmit(form:NgForm){
+    console.log(form);
   }
 }
