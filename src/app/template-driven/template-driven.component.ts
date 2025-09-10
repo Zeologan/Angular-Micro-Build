@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
 @Component({
@@ -7,7 +7,8 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./template-driven.component.css']
 })
 export class TemplateDrivenComponent {
-  onFormSubmit(form:NgForm){
-    console.log(form);
+  @ViewChild('contactForm') form:NgForm | undefined;
+  onFormSubmit(){
+    console.log(this.form?.value);
   }
 }

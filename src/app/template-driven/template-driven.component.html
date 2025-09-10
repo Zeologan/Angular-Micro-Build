@@ -1,17 +1,17 @@
 <div class="container">
-    <form (ngSubmit)="onFormSubmit(contactForm)" #contactForm="ngForm">
+    <form (ngSubmit)="onFormSubmit()" #contactForm="ngForm">
         <h1>Contact Us Form</h1>
         <div class="field">
             <label for="">Name</label>
-            <input type="text" placeholder="Full Name">
+            <input name="fullname" type="text" ngModel placeholder="Full Name">
         </div>
         <div class="field">
             <label for="">Email</label>
-            <input type="email" placeholder="Email">
+            <input name="email" type="email" ngModel placeholder="Email">
         </div>
         <div class="field">
             <label for="">Message</label>
-            <input type="text" placeholder="Tell Your Message">
+            <input name="message" type="text" ngModel placeholder="Tell Your Message">
         </div>
         <input type="submit">
     </form>
